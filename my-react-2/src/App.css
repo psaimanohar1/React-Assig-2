@@ -1,0 +1,130 @@
+/* General layout settings */
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+/* Spinning animation for logo */
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+/* Apply animation only if reduced motion is not preferred */
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+/* Product card layout */
+.product-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the card */
+  transition: transform 0.2s; /* Smooth scale effect on hover */
+  text-align: left;
+  width: 30%;
+}
+
+.product-card:hover {
+  transform: scale(1.05); /* Slightly enlarge card on hover */
+}
+
+/* Product image styling */
+.product-img {
+  width: 150px; /* Set a specific width for consistency */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure image covers the container area */
+  border-radius: 0.5rem; /* Optional: Add rounded corners */
+  margin-bottom: 1rem; /* Add space below the image */
+}
+
+/* Product details within card */
+.product-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/* Container for product list */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 1rem;
+  
+  height: 600px;
+}
+
+/* Optional styles for button consistency */
+button {
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.9;
+}
+
+/* okok */
+.container {
+  max-width: 1200px; /* Maximum width of the container */
+  margin: 0 auto; /* Center the container */
+  padding: 1rem; /* Padding inside the container */
+  height: 600px; /* Set a fixed height for the container */
+  display: flex; /* Use flexbox */
+  flex-wrap: wrap; /* Allow wrapping of items */
+  justify-content: center; /* Center the items horizontally */
+}
+
+.product-card {
+  display: flex; /* Flexbox for card layout */
+  flex-direction: column; /* Arrange content vertically */
+  justify-content: space-between; /* Space between elements */
+  align-items: center; /* Center elements horizontally */
+  border: 1px solid #e0e0e0; /* Light border */
+  border-radius: 0.5rem; /* Rounded corners */
+  padding: 1rem; /* Padding inside the card */
+  transition: transform 0.2s; /* Smooth scale effect on hover */
+  text-align: left; /* Align text to the left */
+  width: calc(33.33% - 1rem); /* 3 cards per row with margin adjustment */
+  margin: 0.5rem; /* Margin around each card for spacing */
+  box-sizing: border-box; /* Ensure padding and border are included in width */
+}
+
+/* Optional: Adjustments for responsiveness */
+@media (max-width: 768px) {
+  .product-card {
+    width: calc(50% - 1rem); /* 2 cards per row on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .product-card {
+    width: 100%; /* 1 card per row on very small screens */
+  }
+}
+  /* h1{
+    background-color: bisque;
+  } */
+nav{
+  background-color: rgb(139, 244, 248);
+  border-radius: 10px;
+}
